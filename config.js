@@ -1,22 +1,22 @@
 export const directories = [
   {
     name: "hangman",
-    path: "/hangman/index.html",
+    path: "/hangman/",
     description:
       "The object of hangman is to guess the secret word before the stick figure is hung.",
     level: "beginner", // "beginner", "intermediate", "advanced"
-    state: "not-started", // "not-started", "in-progress", "completed"
+    state: "in-progress", // "not-started", "in-progress", "completed"
   },
   {
     name: "memory cards",
-    path: "/memory-cards/index.html",
+    path: "/memory-cards/",
     description: "The object of memory-cards is to match all the cards.",
     level: "beginner", // "beginner", "intermediate", "advanced"
-    state: "not-started", // "not-started", "in-progress", "completed"
+    state: "completed", // "not-started", "in-progress", "completed"
   },
   {
     name: "number guessing game",
-    path: "/number-guessing/index.html",
+    path: "/number-guessing/",
     description:
       "The object of the number-guessing game is to guess the secret number.",
     level: "beginner", // "beginner", "intermediate", "advanced"
@@ -24,50 +24,50 @@ export const directories = [
   },
   {
     name: "quiz",
-    path: "/quiz/index.html",
+    path: "/quiz/",
     description: "The object of the quiz is to answer all the questions.",
     state: "not-started", // "not-started", "in-progress", "completed"
   },
   {
     name: "shi fu mi",
-    path: "/shifumi/index.html",
+    path: "/shifumi/",
     description: "",
     state: "not-started", // "not-started", "in-progress", "completed"
   },
   {
     name: "snake",
-    path: "/snake/index.html",
+    path: "/snake/",
     description: "",
     state: "not-started", // "not-started", "in-progress", "completed"
   },
   {
     name: "tic tac toe",
-    path: "/tic-tac-toe/index.html",
+    path: "/tic-tac-toe/",
     description: "",
     state: "not-started", // "not-started", "in-progress", "completed"
   },
   {
     name: "Typing speed test",
-    path: "/typing-speed-test/index.html",
+    path: "/typing-speed-test/",
     description: "",
     level: "beginner", // "beginner", "intermediate", "advanced"
     state: "not-started", // "not-started", "in-progress", "completed"
   },
   {
     name: "word guessing game",
-    path: "/word-guessing/index.html",
+    path: "/word-guessing/",
     description: "",
     state: "not-started", // "not-started", "in-progress", "completed"
   },
   {
     name: "word scramble",
-    path: "/word-scramble/index.html",
+    path: "/word-scramble/",
     description: "",
     state: "not-started", // "not-started", "in-progress", "completed"
   },
   {
     name: "Tachan",
-    path: "/tachan/index.html",
+    path: "/tachan/",
     description: "",
     level: "beginner", // "beginner", "intermediate", "advanced"
     state: "not-started", // "not-started", "in-progress", "completed"
