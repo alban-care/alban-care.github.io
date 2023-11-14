@@ -36,3 +36,20 @@
 .card-body.flipped {
   transform: rotateY(180deg);
 }
+
+.card.disabled {
+  pointer-events: none;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

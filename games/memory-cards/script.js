@@ -1,7 +1,10 @@
 import { faker } from "./data.js";
 
 const API_URL = "https://pokeapi.co/api/v2/";
-const ENV = "dev"; // prod || dev
+const ENV = "prod"; // prod || dev
+const level = "expert"; // beginner || intermediate || expert
+let first = null;
+let second = null;
 
 const difficulty = (level) => {
   switch (level) {
@@ -35,6 +38,7 @@ const shuffle = async (array) => {
 const flipCard = (card) => {
   if (!card) return;
   const flippedCardEl = card.querySelector(".card-body");
+  if (!flippedCardEl) return;
   flippedCardEl.classList.toggle("flipped");
   return card;
 };
@@ -66,10 +70,15 @@ const generateBoard = async (array) => {
     }
   }
 
-  board.classList.add("row", `row-cols-${Math.sqrt(array.length)}`, "g-1");
-  board.style.width = `${
-    Math.sqrt(array.length) * ((150 * 4) / Math.sqrt(array.length))
-  }px`;
+  const cardsInRow = Math.sqrt(array.length); // 4 or 6 or 8
+
+  board.classList.add("row", `row-cols-${cardsInRow}`, "g-1");
+
+  const boardSize = cardsInRow * 90 + (cardsInRow - 1) * 10; // 4 * 90 + 3 * 10 = 400 (px
+  board.style.width = `${boardSize}px`;
+  board.style.height = `${boardSize}px`;
+  board.style.minWidth = `${boardSize}px`;
+  board.style.minHeight = `${boardSize}px`;
 
   const cardView = (name, image) => {
     return `
@@ -85,6 +94,8 @@ const generateBoard = async (array) => {
     const info = await getCardInfo(pokemon);
     const col = document.createElement("div");
     col.classList.add("col");
+    col.style.height = `${boardSize / cardsInRow}px`;
+    col.style.minHeight = `${boardSize / cardsInRow}px`;
     col.innerHTML += cardView(
       info.name,
       info.image || "https://via.placeholder.com/150"
@@ -96,6 +107,7 @@ const generateBoard = async (array) => {
   cards.forEach((card) => {
     card.addEventListener("click", () => {
       flipCard(card);
+      getClickedCards(card);
     });
   });
 
@@ -146,24 +158,80 @@ const getCardInfo = async (pokemon) => {
   };
 };
 
-const init = async () => {
-  if (ENV === "dev") {
-    const numberOfCards = difficulty("beginner") ** 2 / 2;
-    const pokemons = await getPokemons(numberOfCards);
-    const cards = await shuffle([...pokemons, ...pokemons]);
-    const board = await generateBoard(cards);
-    return board;
-  } else {
-    /* production */
-    const numberOfCards = difficulty("beginner") ** 2 / 2;
-    const pokemons = await getPokemons(numberOfCards);
-    if (!pokemons) {
-      return;
-    }
-    const cards = await shuffle([...pokemons, ...pokemons]);
-    const board = await generateBoard(cards);
-    return board;
+const getClickedCards = (card) => {
+  const pokemonName = card.querySelector(".front").alt;
+  console.log(pokemonName);
+
+  if (!card) return;
+  if (!first) {
+    first = card;
+    first.classList.add("disabled");
+    return;
   }
+
+  if (!second) {
+    second = card;
+    first.classList.add("disabled");
+  }
+
+  const cards = document.querySelectorAll(".card");
+  cards.forEach((card) => {
+    card.classList.add("disabled");
+  });
+
+  setTimeout(() => {
+    flipCard(first);
+    flipCard(second);
+    first = null;
+    second = null;
+    cards.forEach((card) => {
+      card.classList.remove("disabled");
+    });
+  }, 1000);
+
+  compareCards(first, second);
+};
+
+const compareCards = (first, second) => {
+  if (!first || !second) return;
+
+  const firstCardName = first.querySelector(".front").alt;
+  const secondCardName = second.querySelector(".front").alt;
+
+  if (firstCardName === secondCardName) {
+    first.classList.add("fade-out");
+    second.classList.add("fade-out");
+
+    setTimeout(() => {
+      first.parentNode.removeChild(first);
+      second.parentNode.removeChild(second);
+
+      first = null;
+      second = null;
+    }, 500);
+
+    return;
+  }
+
+  first = null;
+  second = null;
+
+  return;
+};
+
+const init = async () => {
+  /* init the game */
+  // get difficulty
+  const numberOfCards =
+    ENV === "dev"
+      ? difficulty("beginner") ** 2 / 2
+      : difficulty(level) ** 2 / 2;
+  // get pokemons cards
+  const pokemons = await getPokemons(numberOfCards);
+  // set shuffle deck cards
+  const cards = await shuffle([...pokemons, ...pokemons]);
+  /* render views */
+  await generateBoard(cards);
 };
 
 document.addEventListener("DOMContentLoaded", await init());
