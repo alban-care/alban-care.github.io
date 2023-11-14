@@ -1,0 +1,38 @@
+.card {
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  height: 100% !important;
+  background-color: transparent !important;
+  cursor: pointer;
+  border: none !important;
+}
+
+.card-body {
+  position: relative;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 1.125rem;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.front,
+.back {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.card-body.flipped {
+  transform: rotateY(180deg);
+}
