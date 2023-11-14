@@ -152,7 +152,6 @@ const init = async () => {
     const pokemons = await getPokemons(numberOfCards);
     const cards = await shuffle([...pokemons, ...pokemons]);
     const board = await generateBoard(cards);
-    cardsListener();
     return board;
   } else {
     /* production */
