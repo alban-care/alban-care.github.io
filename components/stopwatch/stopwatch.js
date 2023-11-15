@@ -29,6 +29,9 @@ const stopwatch = {
     }, 10);
   },
   stop: () => {
+    if (!stopwatch.isRunning) {
+      return;
+    }
     clearInterval(stopwatch.timer);
     stopwatch.isRunning = false;
   },
@@ -102,11 +105,7 @@ const stopwatch = {
 
     // buttons
     controllers.forEach((controller) => {
-      const button = stopwatch.insertAdjacentHTML(
-        wrapper,
-        controller,
-        "beforeend"
-      );
+      stopwatch.insertAdjacentHTML(wrapper, controller, "beforeend");
     });
 
     if (el.dataset.controllers === "all") {
