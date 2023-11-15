@@ -1,7 +1,7 @@
 import { directories } from "../../config.js";
-import { card } from "../js/templates/card.js";
-import { setModal } from "../js/templates/modal.js";
-import { capitalize } from "../js/utils/index.js";
+import { card } from "./templates/card.js";
+import { setModal } from "./templates/modal.js";
+import { capitalize } from "./utils/index.js";
 
 const section = document.getElementById("games");
 
