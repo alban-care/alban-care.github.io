@@ -1,8 +1,13 @@
 import { faker } from "./data.js";
+import Stopwatch from "../../components/timer/stopwatch/index.js";
+
+const stopwatch = new Stopwatch(document.querySelector("#timer"), {
+  controllers: "none",
+});
 
 const API_URL = "https://pokeapi.co/api/v2/";
-const ENV = "prod"; // prod || dev
-const level = "expert"; // beginner || intermediate || expert
+const ENV = "dev"; // prod || dev
+const level = "beginner"; // beginner || intermediate || expert
 let first = null;
 let second = null;
 
@@ -234,4 +239,7 @@ const init = async () => {
   await generateBoard(cards);
 };
 
-document.addEventListener("DOMContentLoaded", await init());
+document.addEventListener("DOMContentLoaded", () => {
+  init();
+  stopwatch.render();
+});

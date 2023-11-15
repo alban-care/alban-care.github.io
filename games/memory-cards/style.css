@@ -1,3 +1,12 @@
+/* stopwatch custom styles */
+.timer {
+  color: #fff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* game board custom styles */
+
 .card {
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   height: 100% !important;
