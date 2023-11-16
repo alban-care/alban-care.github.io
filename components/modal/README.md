@@ -48,7 +48,7 @@ openModalButton.addEventListener("click", () => {
 1. Choose your title (required):
 
 ```javascript
-title: string | html string | HTMLElement
+title: string;
 ```
 
 2. Customize your content (required):
@@ -57,7 +57,7 @@ title: string | html string | HTMLElement
 content: string | html string | HTMLElement
 ```
 
-3. Customize your buttons (required)
+3. Customize your buttons (optional)
 
 ```javascript
 footer: "default" | "none" | {
@@ -66,7 +66,7 @@ footer: "default" | "none" | {
         className: string // optional
         callback: function // optional
     },
-    buttons:[
+    othersButtons: null | [
     {
         text: string // required
         className: string // optional
@@ -78,24 +78,10 @@ footer: "default" | "none" | {
 
 ```
 
-4. Personalize the modal with your own css classes (optional):
+4. Alternatively, you can desactivate the default css classes by setting the style option to "custom" and then add your own css classes to the modal (optional):
 
 ```javascript
-className: {
-  modal: string; // optional
-  modalHeader: string; // optional
-  modalTitle: string; // optional
-  modalBody: string; // optional
-  modalFooter: string; // optional
-  modalCloseButton: string; // optional
-  modalButton: string; // optional
-}
-```
-
-Or alternatively, you can desactivate the default css classes by setting the style option to "none" and then add your own css classes to the modal (optional):
-
-```javascript
-style: "default" | "none";
+style: "default" | "custom";
 ```
 
 and then add classes in your css file :
@@ -121,6 +107,20 @@ and then add classes in your css file :
 }
 .modal-button {
   /* (...) */
+}
+```
+
+5. Personalize the modal with your own css classes (optional):
+
+```javascript
+className: null | {
+  modal: string; // optional
+  modalHeader: string; // optional
+  modalTitle: string; // optional
+  modalBody: string; // optional
+  modalFooter: string; // optional
+  modalCloseButton: string; // optional
+  modalButton: string; // optional
 }
 ```
 
