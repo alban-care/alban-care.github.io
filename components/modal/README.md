@@ -78,10 +78,11 @@ footer: "default" | "none" | {
 
 ```
 
-4. Alternatively, you can desactivate the default css classes by setting the style option to "custom" and then add your own css classes to the modal (optional):
+4. Alternatively, you can desactivate the default css classes by setting the style option to "none".
+   You will have to add, properties to the modal and its children in your css file (optional):
 
 ```javascript
-style: "default" | "custom";
+style: style: "default" | "none";
 ```
 
 and then add classes in your css file :

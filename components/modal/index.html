@@ -6,22 +6,47 @@
     <title>Modal component</title>
   </head>
   <body>
-    <button type="button" class="btn">Open modal</button>
+    <button id="openModalButton" type="button">Open modal</button>
     <script type="module">
+      /* please consult the documentation (README) for the full list of options */
       import Modal from "./index.js";
 
-      const modal = new Modal(
-        "Modal title",
-        `<p>Modal content</p>`,
-        `<button type="button" class="btn">Start</button>`
-      );
+      const options = {
+        title: "Modal title",
+        content: "Modal content",
+        footer: {
+          customButtons: [
+            {
+              text: "Validate",
+              callback: () =>
+                alert(
+                  "Congratulation, you have clicked on the validate button"
+                ),
+            },
+            {
+              text: "Close",
+              callback: () => {
+                confirm(
+                  "Window X say : Are you sure you want to close the modal ?"
+                ) &&
+                  // create a timer to close the modal after 3 seconds
+                  setTimeout(() => {
+                    modal.close();
+                  }, 3000);
+              },
+            },
+          ],
+        },
+      };
 
-      const btn = document.querySelector(".btn");
-      btn.addEventListener("click", () => {
-        modal.open();
-      });
+      const modal = new Modal(options);
 
       modal.render();
+
+      const openModalButton = document.querySelector("#openModalButton");
+      openModalButton.addEventListener("click", () => {
+        modal.open();
+      });
     </script>
   </body>
 </html>

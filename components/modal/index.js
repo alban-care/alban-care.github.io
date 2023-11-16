@@ -11,8 +11,14 @@ export default class Modal {
     this.footer = footer;
     this.style = style;
     this.className = className;
-    this.body = document.querySelector("body");
   }
+
+  /* Properties */
+  get body() {
+    return document.querySelector("body");
+  }
+
+  /* Style */
 
   #style = `
   /*!
@@ -187,6 +193,8 @@ export default class Modal {
   }
   `;
 
+  /* Errors */
+
   #catchingErrors = () => {
     // title: string
     if (!this.title && typeof this.title !== "string") {
@@ -258,8 +266,46 @@ export default class Modal {
       }
     }
 
+    // style: "default" | "none"
+
+    if (this.style !== "default" && this.style !== "none") {
+      throw new Error("Modal: The style must be a string (default | none).");
+    }
+
+    // className: null | object (not empty)
+
+    if (this.className && typeof this.className !== "object") {
+      throw new Error("Modal: The className must be an object.");
+    }
+
+    const classNameKeys = [
+      "modal",
+      "modalHeader",
+      "modalTitle",
+      "modalBody",
+      "modalFooter",
+      "modalCloseButton",
+      "modalButton",
+    ];
+
+    if (this.className) {
+      if (Object.keys(this.className).length === 0) {
+        throw new Error("Modal: The className object can't be empty.");
+      }
+
+      for (const key of Object.keys(this.className)) {
+        if (!classNameKeys.includes(key)) {
+          throw new Error(
+            `Modal: The className object can't include ${key} key.`
+          );
+        }
+      }
+    }
+
     return true;
   };
+
+  /* Helpers */
 
   #formatKey(key) {
     if (!key) return;
@@ -288,62 +334,235 @@ export default class Modal {
     return el;
   }
 
+  /* Render methods */
+
+  #renderModal() {
+    const modal = this.#createEl("div", "modal");
+    if (this.className && this.className.modal) {
+      modal.classList.add(this.className.modal);
+    }
+
+    modal.addEventListener("click", (e) => {
+      if (e.target.classList.contains("modal")) {
+        this.close();
+      }
+    });
+
+    /* Dialog */
+
+    modal.appendChild(this.#renderModalDialog());
+
+    return modal;
+  }
+
+  #renderModalDialog() {
+    const modalDialog = this.#createEl("div", "modal-dialog");
+    if (this.className && this.className.modalDialog) {
+      modalDialog.classList.add(this.className.modalDialog);
+    }
+
+    /* Content */
+
+    modalDialog.appendChild(this.#renderModalContent());
+
+    return modalDialog;
+  }
+
+  #renderModalContent() {
+    const modalContent = this.#createEl("div", "modal-content");
+    if (this.className && this.className.modalContent) {
+      modalContent.classList.add(this.className.modalContent);
+    }
+
+    modalContent.addEventListener("click", (e) => {
+      e.stopPropagation();
+    });
+
+    /* Header */
+
+    modalContent.appendChild(this.#renderHeader());
+
+    /* Body */
+
+    modalContent.appendChild(this.#renderModalBody());
+
+    /* Footer */
+
+    modalContent.appendChild(this.#renderFooter());
+
+    return modalContent;
+  }
+
+  #renderModalTitle() {
+    const modalTitle = this.#createEl("h5", "modal-title");
+    if (this.className && this.className.modalTitle) {
+      modalTitle.classList.add(this.className.modalTitle);
+    }
+    modalTitle.textContent = this.title;
+
+    return modalTitle;
+  }
+
+  #renderHeader() {
+    const modalHeader = this.#createEl("div", "modal-header");
+    if (this.className && this.className.modalHeader) {
+      modalHeader.classList.add(this.className.modalHeader);
+    }
+
+    /* Title */
+
+    modalHeader.appendChild(this.#renderModalTitle());
+
+    /* Close button */
+
+    modalHeader.appendChild(this.#renderCloseButtonHeader());
+
+    return modalHeader;
+  }
+
+  #renderModalBody() {
+    const modalBody = this.#createEl("div", "modal-body");
+    if (this.className && this.className.modalBody) {
+      modalBody.classList.add(this.className.modalBody);
+    }
+
+    /* Content */
+
+    if (typeof this.content === "string") {
+      const p = this.#createEl("p");
+      modalBody.appendChild(p);
+      p.innerHTML = this.content;
+    }
+
+    if (this.content instanceof HTMLElement) {
+      modalBody.appendChild(this.content);
+    }
+
+    return modalBody;
+  }
+
+  #renderFooter() {
+    const modalFooter = this.#createEl("div", "modal-footer");
+    if (this.className && this.className.modalFooter) {
+      modalFooter.classList.add(this.className.modalFooter);
+    }
+
+    /* Buttons */
+
+    if (this.footer === "default") {
+      modalFooter.appendChild(this.#renderCloseButtonFooter());
+    }
+
+    if (this.footer === "none") {
+      return modalFooter;
+    }
+
+    if (typeof this.footer === "object") {
+      if (Object.keys(this.footer).includes("closeButton")) {
+        modalFooter.appendChild(
+          this.#renderCloseButtonFooter({
+            text: this.footer.closeButton.text,
+            className: this.footer.closeButton.className,
+            callback: this.footer.closeButton.callback,
+          })
+        );
+      }
+
+      if (Object.keys(this.footer).includes("customButtons")) {
+        this.footer.customButtons.map((o) => {
+          modalFooter.appendChild(
+            this.#renderCustomButton({
+              text: o.text,
+              className: o.className,
+              callback: o.callback,
+            })
+          );
+          return;
+        });
+      }
+    }
+
+    return modalFooter;
+  }
+
+  #renderCustomButton({ text, className = null, callback = null }) {
+    const btn = this.#createEl("button", "btn", { type: "button" });
+    btn.textContent = text;
+    if (className) btn.classList.add(className);
+    if (callback) btn.addEventListener("click", callback);
+
+    return btn;
+  }
+
+  #renderCloseButtonFooter() {
+    const btnClose = this.#createEl("button", "btn", {
+      type: "button",
+      ariaLabel: "close",
+    });
+    btnClose.textContent = "Close";
+    btnClose.addEventListener("click", () => this.close());
+
+    return btnClose;
+  }
+
+  #renderCloseButtonHeader() {
+    const btnClose = this.#createEl("button", "btn-close", {
+      type: "button",
+      ariaLabel: "close",
+    });
+    btnClose.addEventListener("click", () => this.close());
+
+    return btnClose;
+  }
+
+  #toogleStyle() {
+    const style = document.querySelector("#modal-style");
+
+    if (style) {
+      style.remove();
+    } else if (this.#style === "none") {
+      return;
+    } else {
+      const style = document.createElement("style");
+      style.id = "modal-style";
+      style.textContent = this.#style;
+      document.head.appendChild(style);
+    }
+  }
+
+  /* Methods */
+
+  render() {
+    // Catching errors before render
+    this.#catchingErrors();
+
+    // Build modal
+    return this.#renderModal();
+  }
+
   open() {
-    this.body.appendChild(this.render());
+    // Load style
+    this.#toogleStyle();
+
+    // Remove modal if exists
+    this.destroy();
+
+    // Render modal
+    this.body.insertAdjacentElement("afterbegin", this.render());
   }
 
   close() {
     if (!document.querySelector(".modal")) return;
-    this.body.removeChild(document.querySelector(".modal"));
+
+    // Remove style
+    this.#toogleStyle();
+
+    this.destroy();
   }
 
-  render() {
-    this.#catchingErrors();
-
-    const style = document.createElement("style");
-    style.appendChild(document.createTextNode(this.#style));
-    document.getElementsByTagName("head")[0].appendChild(style);
-
-    const modal = this.#createEl("div", "modal");
-    const modalInner = this.#createEl("div", "modal-dialog");
-    const modalContent = this.#createEl("div", "modal-content");
-    const modalHeader = this.#createEl("div", "modal-header");
-    const modalTitle = this.#createEl("h5", "modal-title");
-    if (this.title) {
-      modalTitle.textContent = this.title;
-    }
-    const modalBtnClose = this.#createEl("button", "btn-close", {
-      type: "button",
-      ariaLabel: "close",
-    });
-    const modalBody = this.#createEl("div", "modal-body");
-    if (this.content) {
-      modalBody.innerHTML = this.content;
-    }
-    const modalFooter = this.#createEl("div", "modal-footer");
-    const modalBtnCloseFooter = this.#createEl("button", "btn", {
-      type: "button",
-      ariaLabel: "close",
-    });
-    modalBtnCloseFooter.textContent = "Close";
-    if (this.footer) {
-      modalFooter.innerHTML = this.footer;
-    }
-
-    modal.appendChild(modalInner);
-    modalInner.appendChild(modalContent);
-    modalContent.appendChild(modalHeader);
-    modalHeader.appendChild(modalTitle);
-    modalHeader.appendChild(modalBtnClose);
-    modalContent.appendChild(modalBody);
-    modalFooter.appendChild(modalBtnCloseFooter);
-    modalContent.appendChild(modalFooter);
-
-    modalBtnClose.addEventListener("click", () => this.close());
-    modalBtnCloseFooter.addEventListener("click", () => this.close());
-    modal.addEventListener("click", () => this.close());
-    modalContent.addEventListener("click", (e) => e.stopPropagation());
-
-    return modal;
+  // Remove modal
+  destroy() {
+    if (!document.querySelector(".modal")) return;
+    this.body.removeChild(document.querySelector(".modal"));
   }
 }
