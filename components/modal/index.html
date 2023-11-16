@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal component</title>
+  </head>
+  <body>
+    <button type="button" class="btn">Open modal</button>
+    <script type="module">
+      import Modal from "./index.js";
+
+      const modal = new Modal(
+        "Modal title",
+        `<p>Modal content</p>`,
+        `<button type="button" class="btn">Start</button>`
+      );
+
+      const btn = document.querySelector(".btn");
+      btn.addEventListener("click", () => {
+        modal.open();
+      });
+
+      modal.render();
+    </script>
+  </body>
+</html>
