@@ -1,36 +1,17 @@
 export default class Modal {
-  constructor(title, content, footer) {
+  constructor({
+    title,
+    content,
+    footer = "default",
+    style = "default",
+    className = null,
+  }) {
     this.title = title;
     this.content = content;
     this.footer = footer;
+    this.style = style;
+    this.className = className;
     this.body = document.querySelector("body");
-  }
-
-  #formatKey(key) {
-    if (!key) return;
-
-    const regexp = /[A-Z]/g;
-    const matches = [...key.matchAll(regexp)];
-
-    if (!matches.length) return key;
-
-    for (const match of matches) {
-      key = key.replace(match[0], `-${match[0].toLowerCase()}`);
-    }
-
-    return key;
-  }
-
-  #createEl(tag, className = null, attributes = {}) {
-    const el = document.createElement(tag);
-    if (className) el.classList.add(className);
-    if (Object.keys(attributes)) {
-      for (const [key, value] of Object.entries(attributes)) {
-        el.setAttribute(this.#formatKey(key), value);
-      }
-      return el;
-    }
-    return el;
   }
 
   #style = `
@@ -206,6 +187,107 @@ export default class Modal {
   }
   `;
 
+  #catchingErrors = () => {
+    // title: string
+    if (!this.title && typeof this.title !== "string") {
+      throw new Error("Modal: The title can't empty and must be a string.");
+    }
+
+    // content: string | html string | HTMLElement
+    if (
+      !this.content &&
+      typeof this.content !== "string" &&
+      !(this.content instanceof HTMLElement)
+    ) {
+      throw new Error(
+        "Modal: The content can't empty and must be a string or HTMLElement."
+      );
+    }
+
+    // footer: "default" | "none" | object (not empty)
+    if (
+      this.footer !== "default" &&
+      this.footer !== "none" &&
+      typeof this.footer !== "object"
+    ) {
+      throw new Error("Modal: The footer must be a string or object.");
+    }
+
+    // footer object: { closeButton: null | { text: string, className: string | null, callback: function | null }, customButtons: null | array of { text: string, className: string | null, callback: function | null } }
+
+    if (
+      typeof this.footer === "object" &&
+      Object.keys(this.footer).length === 0
+    ) {
+      throw new Error("Modal: The footer object can't be empty.");
+    }
+
+    if (typeof this.footer === "object") {
+      if (Object.keys(this.footer).includes("closeButton")) {
+        if (!Object.keys(this.footer.closeButton).includes("text")) {
+          throw new Error(
+            "Modal: The footer closeButton object can't be empty and must include text."
+          );
+        }
+
+        if (this.footer.closeButton.text === "") {
+          throw new Error(
+            "Modal: The text in footer closeButton can't be empty."
+          );
+        }
+      }
+    }
+
+    if (typeof this.footer === "object") {
+      if (Object.keys(this.footer).includes("customButtons")) {
+        this.footer.customButtons.map((o) => {
+          if (!Object.keys(o).includes("text")) {
+            throw new Error(
+              "Modal: The footer customButtons object can't be empty and must include text."
+            );
+          }
+
+          if (o.text === "") {
+            throw new Error(
+              "Modal: The text in footer customButtons can't be empty."
+            );
+          }
+
+          return;
+        });
+      }
+    }
+
+    return true;
+  };
+
+  #formatKey(key) {
+    if (!key) return;
+
+    const regexp = /[A-Z]/g;
+    const matches = [...key.matchAll(regexp)];
+
+    if (!matches.length) return key;
+
+    for (const match of matches) {
+      key = key.replace(match[0], `-${match[0].toLowerCase()}`);
+    }
+
+    return key;
+  }
+
+  #createEl(tag, className = null, attributes = {}) {
+    const el = document.createElement(tag);
+    if (className) el.classList.add(className);
+    if (Object.keys(attributes)) {
+      for (const [key, value] of Object.entries(attributes)) {
+        el.setAttribute(this.#formatKey(key), value);
+      }
+      return el;
+    }
+    return el;
+  }
+
   open() {
     this.body.appendChild(this.render());
   }
@@ -216,6 +298,8 @@ export default class Modal {
   }
 
   render() {
+    this.#catchingErrors();
+
     const style = document.createElement("style");
     style.appendChild(document.createTextNode(this.#style));
     document.getElementsByTagName("head")[0].appendChild(style);
