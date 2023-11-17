@@ -6,8 +6,8 @@ const stopwatch = new Stopwatch(document.querySelector("#timer"), {
 });
 
 const API_URL = "https://pokeapi.co/api/v2/";
-const ENV = "dev"; // prod || dev
-const level = "beginner"; // beginner || intermediate || expert
+const ENV = "prod"; // prod || dev
+const level = "intermediate"; // beginner || intermediate || expert
 let first = null;
 let second = null;
 
