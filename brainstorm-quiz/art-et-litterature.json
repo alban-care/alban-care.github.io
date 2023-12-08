@@ -1,0 +1,687 @@
+{
+    "count": 25,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "id": 1,
+        "question": "Qui a écrit\"Romeo et Juliette\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "William Shakespeare",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Geoffrey Chaucer",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "John Donne",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Christopher Marlowe",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Quel célèbre tableau a été peint par Leonardo da Vinci ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "La Joconde",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "La Cène",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "La Naissance de Vénus",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "La Création d'Adam",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Qui est l'auteur de la pièce de théâtre\"Hamlet\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "William Shakespeare",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Christopher Marlowe",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "John Donne",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Geoffrey Chaucer",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Quel mouvement artistique était caractérisé par l'utilisation de formes géométriques abstraites et de couleurs vives ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le cubisme",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Le surréalisme",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le fauvisme",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "L'expressionnisme",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Qui a écrit\"Les Misérables\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Victor Hugo",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Gustave Flaubert",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Émile Zola",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Honoré de Balzac",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Quel peintre impressionniste est connu pour ses nénuphars ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Claude Monet",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Edgar Degas",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Pierre-Auguste Renoir",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Paul Cézanne",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Quel écrivain est l'auteur de\"1984\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "George Orwell",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Aldous Huxley",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Ray Bradbury",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Anthony Burgess",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Quel célèbre sculpteur a créé la statue de David ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Michel-Ange",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Donatello",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Gian Lorenzo Bernini",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Auguste Rodin",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Qui a écrit la série de romans\"Le Seigneur des Anneaux\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "J.R.R. Tolkien",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "C.S. Lewis",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "J.K. Rowling",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "George R.R. Martin",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Quel mouvement artistique mettait l'accent sur la représentation de la réalité quotidienne, en particulier des scènes de la vie urbaine ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le réalisme",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Le romantisme",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le naturalisme",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le symbolisme",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "Quel écrivain a créé le personnage de Sherlock Holmes ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Arthur Conan Doyle",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Agatha Christie",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Raymond Chandler",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Dorothy L. Sayers",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "Qui a peint\"La Nuit étoilée\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Vincent van Gogh",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Pablo Picasso",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Claude Monet",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Edvard Munch",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "question": "Quel dramaturge grec antique est l'auteur de tragédies comme\"Oedipe Roi\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Sophocle",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Euripide",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Aristophane",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Eschyle",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "question": "Quelle artiste mexicaine était connue pour ses peintures surréalistes, notamment\"Les Deux Fridas\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Frida Kahlo",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Georgia O'Keeffe",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Tamara de Lempicka",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Artemisia Gentileschi",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "question": "Qui a écrit\"Orgueil et Préjugés\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Jane Austen",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Charlotte Brontë",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Emily Brontë",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Thomas Hardy",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "question": "Quel peintre flamand du XVIIe siècle était célèbre pour ses natures mortes ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Pieter Bruegel l'Ancien",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Peter Paul Rubens",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Jan van Eyck",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Hieronymus Bosch",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "question": "Qui a écrit\"Le Petit Prince\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Antoine de Saint-Exupéry",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Jean de La Fontaine",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Voltaire",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Victor Hugo",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "question": "Quel courant artistique du début du XXe siècle mettait en avant la spontanéité et l'expression personnelle ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "L'expressionnisme",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Le cubisme",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le surréalisme",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le fauvisme",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "question": "Qui est l'auteur de\"Crime et Châtiment\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Fiodor Dostoïevski",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Léon Tolstoï",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Anton Tchekhov",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Nikolaï Gogol",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "question": "Quel artiste italien de la Renaissance a peint la fresque\"La Cène\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Leonardo da Vinci",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Michel-Ange",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Raphaël",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Sandro Botticelli",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "question": "Qui a écrit\"Les Fleurs du Mal\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Charles Baudelaire",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Victor Hugo",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Paul Verlaine",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Arthur Rimbaud",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 22,
+        "question": "Quel peintre néerlandais a créé\"La Ronde de Nuit\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Rembrandt",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Johannes Vermeer",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Jan Steen",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Frans Hals",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "question": "Qui a écrit\"Le Rouge et le Noir\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Stendhal",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Gustave Flaubert",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Honoré de Balzac",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Émile Zola",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "question": "Quel mouvement artistique du XXe siècle mettait en avant l'irrationnel et l'inconscient ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le surréalisme",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Le cubisme",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le fauvisme",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "L'expressionnisme",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 25,
+        "question": "Qui a créé la sculpture\"Le Penseur\"?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Auguste Rodin",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Michel-Ange",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Gian Lorenzo Bernini",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Donatello",
+            "isCorrect": false
+          }
+        ]
+      },
+      "Qui a écrit\"Romeo et Juliette\"?",
+      "Quel célèbre tableau a été peint par Leonardo da Vinci ?",
+      "Qui est l'auteur de la pièce de théâtre\"Hamlet\"?",
+      "Quel mouvement artistique était caractérisé par l'utilisation de formes géométriques abstraites et de couleurs vives ?",
+      "Qui a écrit\"Les Misérables\"?",
+      "Quel peintre impressionniste est connu pour ses nénuphars ?",
+      "Quel écrivain est l'auteur de\"1984\"?",
+      "Quel célèbre sculpteur a créé la statue de David ?",
+      "Qui a écrit la série de romans\"Le Seigneur des Anneaux\"?",
+      "Quel mouvement artistique mettait l'accent sur la représentation de la réalité quotidienne, en particulier des scènes de la vie urbaine ?",
+      "Quel écrivain a créé le personnage de Sherlock Holmes ?",
+      "Qui a peint\"La Nuit étoilée\"?",
+      "Quel dramaturge grec antique est l'auteur de tragédies comme\"Oedipe Roi\"?",
+      "Quelle artiste mexicaine était connue pour ses peintures surréalistes, notamment\"Les Deux Fridas\"?",
+      "Qui a écrit\"Orgueil et Préjugés\"?",
+      "Quel peintre flamand du XVIIe siècle était célèbre pour ses natures mortes ?",
+      "Qui a écrit\"Le Petit Prince\"?",
+      "Quel courant artistique du début du XXe siècle mettait en avant la spontanéité et l'expression personnelle ?",
+      "Qui est l'auteur de\"Crime et Châtiment\"?",
+      "Quel artiste italien de la Renaissance a peint la fresque\"La Cène\"?",
+      "Qui a écrit\"Les Fleurs du Mal\"?",
+      "Quel peintre néerlandais a créé\"La Ronde de Nuit\"?",
+      "Qui a écrit\"Le Rouge et le Noir\"?",
+      "Quel mouvement artistique du XXe siècle mettait en avant l'irrationnel et l'inconscient ?",
+      "Qui a créé la sculpture\"Le Penseur\"?",
+      "Quelle romancière britannique est l'auteur de la série de livres\"Harry Potter\"?",
+      "Quel peintre français est associé au mouvement impressionniste et a créé\"Déjeuner sur l'herbe\"?",
+      "Qui est l'auteur de la pièce de théâtre\"Macbeth\"?",
+      "Quel artiste espagnol était une figure majeure du mouvement surréaliste et a peint\"La Persistance de la mémoire\"?"
+    ]
+  }
+  

@@ -1,0 +1,246 @@
+{
+    "count": 23,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "id": 1,
+        "question": "Quelle équipe a remporté la Coupe du Monde de la FIFA en 2018 ?",
+        "answers": [
+          { "id": 1, "answer": "France", "isCorrect": true },
+          { "id": 2, "answer": "Brésil", "isCorrect": false },
+          { "id": 3, "answer": "Allemagne", "isCorrect": false },
+          { "id": 4, "answer": "Espagne", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Quel est le sport principal du Tour de France ?",
+        "answers": [
+          { "id": 1, "answer": "Course à pied", "isCorrect": false },
+          { "id": 2, "answer": "Cyclisme", "isCorrect": true },
+          { "id": 3, "answer": "Football", "isCorrect": false },
+          { "id": 4, "answer": "Tennis", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Dans quel sport les termes 'strike' et 'spare' sont-ils utilisés ?",
+        "answers": [
+          { "id": 1, "answer": "Bowling", "isCorrect": true },
+          { "id": 2, "answer": "Golf", "isCorrect": false },
+          { "id": 3, "answer": "Tennis de table", "isCorrect": false },
+          { "id": 4, "answer": "Boxe", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Qui est le joueur de tennis suisse avec le plus grand nombre de titres du Grand Chelem ?",
+        "answers": [
+          { "id": 1, "answer": "Rafael Nadal", "isCorrect": false },
+          { "id": 2, "answer": "Novak Djokovic", "isCorrect": false },
+          { "id": 3, "answer": "Roger Federer", "isCorrect": true },
+          { "id": 4, "answer": "Andy Murray", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Quel joueur de basket-ball est surnommé 'The King' ?",
+        "answers": [
+          { "id": 1, "answer": "Stephen Curry", "isCorrect": false },
+          { "id": 2, "answer": "LeBron James", "isCorrect": true },
+          { "id": 3, "answer": "Kevin Durant", "isCorrect": false },
+          { "id": 4, "answer": "Kobe Bryant", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Quelle nation a remporté le plus grand nombre de médailles d'or aux Jeux Olympiques d'été de 2016 ?",
+        "answers": [
+          { "id": 1, "answer": "États-Unis", "isCorrect": true },
+          { "id": 2, "answer": "Chine", "isCorrect": false },
+          { "id": 3, "answer": "Russie", "isCorrect": false },
+          { "id": 4, "answer": "Brésil", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Quel est le nom du trophée décerné au vainqueur du Super Bowl ?",
+        "answers": [
+          { "id": 1, "answer": "Stanley Cup", "isCorrect": false },
+          { "id": 2, "answer": "World Series Trophy", "isCorrect": false },
+          { "id": 3, "answer": "Vince Lombardi Trophy", "isCorrect": true },
+          {
+            "id": 4,
+            "answer": "Larry O'Brien Championship Trophy",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Qui a remporté le Ballon d'Or 2021 ?",
+        "answers": [
+          { "id": 1, "answer": "Lionel Messi", "isCorrect": true },
+          { "id": 2, "answer": "Cristiano Ronaldo", "isCorrect": false },
+          { "id": 3, "answer": "Mohamed Salah", "isCorrect": false },
+          { "id": 4, "answer": "Kylian Mbappé", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Quelle équipe a remporté le dernier championnat de la NBA ?",
+        "answers": [
+          { "id": 1, "answer": "Los Angeles Lakers", "isCorrect": false },
+          { "id": 2, "answer": "Golden State Warriors", "isCorrect": false },
+          { "id": 3, "answer": "Milwaukee Bucks", "isCorrect": true },
+          { "id": 4, "answer": "Brooklyn Nets", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Quel pays a remporté le plus grand nombre de médailles d'or aux Jeux Olympiques d'hiver de 2018 ?",
+        "answers": [
+          { "id": 1, "answer": "Norvège", "isCorrect": true },
+          { "id": 2, "answer": "Allemagne", "isCorrect": false },
+          { "id": 3, "answer": "États-Unis", "isCorrect": false },
+          { "id": 4, "answer": "Canada", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "Dans quel sport les termes 'birdie' et 'eagle' sont-ils utilisés ?",
+        "answers": [
+          { "id": 1, "answer": "Golf", "isCorrect": true },
+          { "id": 2, "answer": "Tennis", "isCorrect": false },
+          { "id": 3, "answer": "Football américain", "isCorrect": false },
+          { "id": 4, "answer": "Ski alpin", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "Qui a remporté le Tournoi de Wimbledon en simple masculin en 2021 ?",
+        "answers": [
+          { "id": 1, "answer": "Rafael Nadal", "isCorrect": false },
+          { "id": 2, "answer": "Novak Djokovic", "isCorrect": true },
+          { "id": 3, "answer": "Roger Federer", "isCorrect": false },
+          { "id": 4, "answer": "Andy Murray", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 13,
+        "question": "Quelle équipe de baseball est surnommée les 'Bronx Bombers' ?",
+        "answers": [
+          { "id": 1, "answer": "Boston Red Sox", "isCorrect": false },
+          { "id": 2, "answer": "New York Mets", "isCorrect": false },
+          { "id": 3, "answer": "Los Angeles Dodgers", "isCorrect": false },
+          { "id": 4, "answer": "New York Yankees", "isCorrect": true }
+        ]
+      },
+      {
+        "id": 14,
+        "question": "Quel athlète a remporté le plus grand nombre de médailles d'or aux Jeux Olympiques d'été ?",
+        "answers": [
+          { "id": 1, "answer": "Michael Phelps", "isCorrect": true },
+          { "id": 2, "answer": "Usain Bolt", "isCorrect": false },
+          { "id": 3, "answer": "Simone Biles", "isCorrect": false },
+          { "id": 4, "answer": "Jesse Owens", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 15,
+        "question": "Quelle est la durée réglementaire d'un match de football (soccer) ?",
+        "answers": [
+          { "id": 1, "answer": "90 minutes", "isCorrect": true },
+          { "id": 2, "answer": "60 minutes", "isCorrect": false },
+          { "id": 3, "answer": "120 minutes", "isCorrect": false },
+          { "id": 4, "answer": "45 minutes", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 16,
+        "question": "Dans quel sport le terme 'hat-trick' est-il couramment utilisé ?",
+        "answers": [
+          { "id": 1, "answer": "Football (soccer)", "isCorrect": true },
+          { "id": 2, "answer": "Hockey sur glace", "isCorrect": false },
+          { "id": 3, "answer": "Baseball", "isCorrect": false },
+          { "id": 4, "answer": "Basket-ball", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 17,
+        "question": "Qui est le détenteur du record du monde du saut en hauteur masculin ?",
+        "answers": [
+          { "id": 1, "answer": "Usain Bolt", "isCorrect": false },
+          { "id": 2, "answer": "Renaud Lavillenie", "isCorrect": false },
+          { "id": 3, "answer": "Javier Sotomayor", "isCorrect": true },
+          { "id": 4, "answer": "Mike Powell", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 18,
+        "question": "Quel golfeur a remporté le plus grand nombre de tournois du Grand Chelem ?",
+        "answers": [
+          { "id": 1, "answer": "Jack Nicklaus", "isCorrect": true },
+          { "id": 2, "answer": "Tiger Woods", "isCorrect": false },
+          { "id": 3, "answer": "Phil Mickelson", "isCorrect": false },
+          { "id": 4, "answer": "Rory McIlroy", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 19,
+        "question": "Quel est le nom du stade de tennis où se déroule l'US Open ?",
+        "answers": [
+          { "id": 1, "answer": "Arthur Ashe Stadium", "isCorrect": true },
+          { "id": 2, "answer": "Rod Laver Arena", "isCorrect": false },
+          { "id": 3, "answer": "Centre Court", "isCorrect": false },
+          { "id": 4, "answer": "Roland Garros", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 20,
+        "question": "Quelle équipe de football a remporté le plus grand nombre de Super Bowls ?",
+        "answers": [
+          { "id": 1, "answer": "Pittsburgh Steelers", "isCorrect": true },
+          { "id": 2, "answer": "New England Patriots", "isCorrect": false },
+          { "id": 3, "answer": "Dallas Cowboys", "isCorrect": false },
+          { "id": 4, "answer": "San Francisco 49ers", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 21,
+        "question": "Qui a été nommé MVP (Joueur le plus utile) du Super Bowl LIV en 2020 ?",
+        "answers": [
+          { "id": 1, "answer": "Tom Brady", "isCorrect": false },
+          { "id": 2, "answer": "Patrick Mahomes", "isCorrect": true },
+          { "id": 3, "answer": "Travis Kelce", "isCorrect": false },
+          { "id": 4, "answer": "Tyreek Hill", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 22,
+        "question": "Quel est le nom du trophée décerné au vainqueur de la Ligue des champions de l'UEFA ?",
+        "answers": [
+          { "id": 1, "answer": "Copa del Rey", "isCorrect": false },
+          { "id": 2, "answer": "Scudetto", "isCorrect": false },
+          {
+            "id": 3,
+            "answer": "UEFA Champions League Trophy",
+            "isCorrect": true
+          },
+          { "id": 4, "answer": "Europa League Trophy", "isCorrect": false }
+        ]
+      },
+      {
+        "id": 23,
+        "question": "Quel joueur de football a remporté le Ballon d'Or le plus de fois ?",
+        "answers": [
+          { "id": 1, "answer": "Lionel Messi", "isCorrect": true },
+          { "id": 2, "answer": "Cristiano Ronaldo", "isCorrect": false },
+          { "id": 3, "answer": "Neymar", "isCorrect": false },
+          { "id": 4, "answer": "Zinedine Zidane", "isCorrect": false }
+        ]
+      }
+    ]
+  }
+  

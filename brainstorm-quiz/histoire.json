@@ -1,0 +1,528 @@
+{
+    "count": 20,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "id": 1,
+        "question": "Qui était le premier président des États-Unis ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "George Washington",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Abraham Lincoln",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Thomas Jefferson",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "John Adams",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Quelle bataille a marqué la fin de Napoléon Bonaparte ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "La bataille de Waterloo",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "La bataille de Trafalgar",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "La bataille de Leipzig",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "La bataille de la Moskowa",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Quel événement a déclenché la Première Guerre mondiale en 1914 ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "L'assassinat de l'archiduc François-Ferdinand",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "L'assassinat de l'empereur Guillaume II",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "L'assassinat de l'empereur François-Joseph",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "L'assassinat de l'empereur Nicolas II",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Quel explorateur a réalisé le premier tour du monde en 1522 ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Ferdinand Magellan",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Christophe Colomb",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Vasco de Gama",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "James Cook",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Quel empereur romain a construit le Colisée de Rome ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Vespasien",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Auguste",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Néron",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Trajan",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "En quelle année la Guerre de Sécession américaine a-t-elle pris fin ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "1865",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "1861",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "1863",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "1867",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Qui était la reine d'Égypte célèbre pour sa liaison avec Marc Antoine et Jules César ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Cléopâtre",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Néfertiti",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Hatchepsout",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Arsinoé",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Quel navigateur portugais a contourné le cap de Bonne-Espérance en 1488 ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Bartolomeu Dias",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Vasco de Gama",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Christophe Colomb",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "James Cook",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Quel roi d'Angleterre a été exécuté pendant la guerre civile anglaise en 1649 ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Charles Ier",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Charles II",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Henri VIII",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Richard III",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Quelle dynastie chinoise a construit la Grande Muraille de Chine ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "La dynastie Qin",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "La dynastie Han",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "La dynastie Ming",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "La dynastie Tang",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "Quel événement a marqué la fin de la guerre froide en 1989 ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "La chute du mur de Berlin",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "La chute du mur de Chine",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "La chute du mur de Corée",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "La chute du mur de Cuba",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "Qui était le fondateur de l'empire mongol au XIIIe siècle ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Genghis Khan",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Kubilai Khan",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Tamerlan",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Attila",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "question": "Quel empereur romain a incendié Rome en 64 ap. J.-C. ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Néron",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Auguste",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Caligula",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Claude",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "question": "Quelle bataille a marqué la défaite de Napoléon à la fin de la campagne de Russie en 1812 ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "La bataille de Leipzig",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "La bataille de Waterloo",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "La bataille de Trafalgar",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "La bataille de la Moskowa",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "question": "Qui a écrit la Déclaration d'indépendance des États-Unis en 1776 ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Thomas Jefferson",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "George Washington",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Benjamin Franklin",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "John Adams",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "question": "Quelle bataille importante a eu lieu pendant la guerre de Cent Ans en 1415 ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "La bataille d'Azincourt",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "La bataille de Crécy",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "La bataille de Poitiers",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "La bataille de Castillon",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "question": "Quelle ancienne civilisation a construit les pyramides de Gizeh ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Les anciens Égyptiens",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Les Mayas",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Les Incas",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Les Aztèques",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "question": "Quelle femme célèbre a lutté pour les droits des femmes au début du XXe siècle ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Emmeline Pankhurst",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Rosa Parks",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Marie Curie",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Margaret Thatcher",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "question": "Quel événement a marqué le début de la Révolution industrielle en Angleterre ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "L'invention de la machine à vapeur",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "L'invention de la machine à coudre",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "L'invention de la machine à écrire",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "L'invention de la machine à laver",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "question": "Qui était le roi d'Angleterre pendant la signature de la Magna Carta en 1215 ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Jean sans Terre",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Richard Cœur de Lion",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Henri II",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Henri III",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+  

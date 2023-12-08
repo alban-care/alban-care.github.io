@@ -1,0 +1,528 @@
+{
+    "count": 20,
+    "next": null,
+    "previous": null,
+    "results": [
+      {
+        "id": 1,
+        "question": "Quel est le plus grand pays d'Amérique du Sud en termes de superficie ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le Brésil",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "L'Argentine",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le Pérou",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "La Colombie",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Quelle est la capitale de l'Australie ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Sydney",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "Melbourne",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Canberra",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "answer": "Perth",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Quel fleuve traverse Paris ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "La Seine",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "La Loire",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le Rhône",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le Rhin",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Quelle est la plus haute montagne du monde ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le Mont Blanc",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "Le Mont Everest",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "answer": "Le Mont McKinley",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le Mont Kilimandjaro",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Dans quel pays se trouve le Kilimandjaro ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le Kenya",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "La Tanzanie",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "answer": "Le Nigéria",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le Soudan",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Quelle est la plus grande île du monde ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "L'Islande",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "La Nouvelle-Guinée",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Bornéo",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le Groenland",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Quel est le plus grand désert du monde en termes de superficie ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le Sahara",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Le Kalahari",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le Gobi",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le Namib",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Quel est le seul pays qui est également un continent ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "L'Australie",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "La Nouvelle-Zélande",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le Groenland",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "La Papouasie-Nouvelle-Guinée",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Dans quel océan se trouve l'île de Madagascar ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "L'océan Atlantique",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "L'océan Indien",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "answer": "L'océan Pacifique",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "L'océan Arctique",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Quelle est la capitale du Canada ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Toronto",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "Montréal",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Ottawa",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "answer": "Québec",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "Quelle chaîne de montagnes traverse l'Italie ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Les Alpes",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Les Carpates",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Les Pyrénées",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Les Apennins",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "question": "Quel est le plus grand lac d'Afrique ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le lac Victoria",
+            "isCorrect": true
+          },
+          {
+            "id": 2,
+            "answer": "Le lac Tanganyika",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le lac Malawi",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le lac Tchad",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "question": "Quelle est la plus grande ville de Chine ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Shanghai",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "Pékin",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "answer": "Hong Kong",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Canton",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 14,
+        "question": "Dans quel pays se trouve le canal de Panama ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le Costa Rica",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "Le Nicaragua",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le Panama",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "answer": "La Colombie",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "question": "Quelle est la plus grande île de la Méditerranée ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "La Sicile",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "La Sardaigne",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "La Corse",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "La Crète",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 16,
+        "question": "Quel est le plus grand État des États-Unis en termes de superficie ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le Texas",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "La Californie",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "L'Alaska",
+            "isCorrect": true
+          },
+          {
+            "id": 4,
+            "answer": "La Floride",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 17,
+        "question": "Quelle est la capitale de la Nouvelle-Zélande ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Auckland",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "Wellington",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "answer": "Christchurch",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Hamilton",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "question": "Quel est le plus grand lac d'Amérique du Nord ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le lac Ontario",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "Le lac Michigan",
+            "isCorrect": false
+          },
+          {
+            "id": 3,
+            "answer": "Le lac Huron",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le lac Supérieur",
+            "isCorrect": true
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "question": "Dans quel pays se trouve le Taj Mahal ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le Pakistan",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "L'Inde",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "answer": "Le Bangladesh",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Le Népal",
+            "isCorrect": false
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "question": "Quelle est la plus grande ville d'Afrique du Sud ?",
+        "answers": [
+          {
+            "id": 1,
+            "answer": "Le Cap",
+            "isCorrect": false
+          },
+          {
+            "id": 2,
+            "answer": "Johannesburg",
+            "isCorrect": true
+          },
+          {
+            "id": 3,
+            "answer": "Durban",
+            "isCorrect": false
+          },
+          {
+            "id": 4,
+            "answer": "Pretoria",
+            "isCorrect": false
+          }
+        ]
+      }
+    ]
+  }
+  
