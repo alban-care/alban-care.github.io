@@ -1,0 +1,80 @@
+export const metadata = {
+  title: "Mastering CSS Layouts",
+  description:
+    "Discover the power of CSS layouts and how to create responsive, flexible designs. This article explores the different layout techniques and best practices for building modern web interfaces.",
+};
+
+export const customMetadata = {
+  isPublished: true,
+  publishedAt: "2024-09-24",
+  lastUpdatedAt: "2024-10-25",
+  tags: ["CSS", "Web Development", "Frontend"],
+};
+
+# Mastering CSS Layouts
+
+**Discover the power of CSS layouts and how to create responsive, flexible designs. This article explores the different layout techniques and best practices for building modern web interfaces.**
+
+## Introduction
+
+In the world of web development, mastering CSS layouts is crucial to creating visually appealing and functional web pages. With the evolution of CSS, developers now have a wide range of tools and techniques at their disposal to build responsive and flexible designs. This article delves into the core concepts of CSS layouts, highlighting various methods and best practices to help you create modern, user-friendly interfaces.
+
+## 1. The Box Model: The Foundation of CSS Layouts
+
+Before diving into advanced layout techniques, it's essential to understand the CSS Box Model. The Box Model is the foundation of how elements are displayed on a web page. It consists of four parts:
+
+- **Content:** The actual content of the element.
+- **Padding:** The space between the content and the border.
+- **Border:** The border surrounding the padding (if any).
+- **Margin:** The space outside the border that separates the element from others.
+
+Understanding how these parts interact is key to mastering CSS layouts. Adjusting padding, borders, and margins allows you to control the spacing and positioning of elements on a page.
+
+## 2. Flexbox: A Powerful Layout Tool
+
+Flexbox, short for "Flexible Box Layout," is a CSS layout module designed to provide a more efficient way to lay out, align, and distribute space among items in a container. Flexbox is particularly useful for creating one-dimensional layouts, such as rows or columns.
+
+### Key Features of Flexbox:
+
+- **Direction:** You can set items to align horizontally (`row`) or vertically (`column`).
+- **Alignment:** Flexbox allows easy alignment of items along both the main axis (e.g., `justify-content`) and the cross axis (e.g., `align-items`).
+- **Order:** The `order` property enables you to control the visual order of elements, independent of their HTML structure.
+
+### Example:
+
+````css
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+This simple setup evenly spaces elements within a container, making Flexbox a go-to solution for many layout challenges.
+
+## 3. Grid Layout: Building Complex Designs
+
+While Flexbox excels in one-dimensional layouts, CSS Grid is the champion of two-dimensional layouts. CSS Grid enables you to create complex grid-based designs with rows and columns, providing precise control over the layout structure.
+
+### Key Features of CSS Grid:
+
+- **Grid Tracks:** Define rows and columns with the `grid-template-rows` and `grid-template-columns` properties.
+- **Grid Areas:** Assign specific areas within the grid layout using the `grid-area` property.
+- **Gap Control:** Use the `grid-gap` property to define spacing between grid items.
+
+### Example:
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.item {
+  grid-column: span 2;
+}
+````
+
+With CSS Grid, you can design intricate layouts that adapt to different screen sizes, making it a powerful tool for responsive design.
+
+(...)
