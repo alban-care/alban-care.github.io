@@ -11,18 +11,15 @@ interface SnippetPageParams {
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
   const snippets = await getAllFilesData("snippets");
-  const staticParams = snippets.map((snippet) => ({
+  return snippets.map((snippet) => ({
     slug: snippet.slug,
   }));
-
-  return staticParams;
 }
 
-export async function generateStaticProps({
+export async function generateMetadata({
   params,
 }: SnippetPageParams): Promise<Metadata> {
   const { metadata } = await getFileMetadata("snippets", params.slug);
-
   return {
     title: metadata.title,
     description: metadata.description,
@@ -30,11 +27,8 @@ export async function generateStaticProps({
 }
 
 export default async function Snippet({ params }: SnippetPageParams) {
-  const { metadata, customMetadata } = await getFileMetadata(
-    "snippets",
-    params.slug
-  );
-
+  const { metadata } = await getFileMetadata("snippets", params.slug);
+  
   const MdxComponent = dynamic(
     () => import(`@/content/snippets/${params.slug}.mdx`)
   );
