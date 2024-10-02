@@ -16,12 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang={appLocale} suppressHydrationWarning>
-      <body className="font-sans antialiased">
+      <body className="min-h-screen flex flex-col justify-between font-sans antialiased">
         <Providers>
-          <div className="min-h-screen grid grid-rows-[1rem_1fr_1rem] items-center justify-items-center p-8">
+          <main className="container w-full flex-1 flex flex-col gap-8 p-4">
             {children}
-            <Footer />
-          </div>
+          </main>
+          <Footer />
         </Providers>
       </body>
     </html>

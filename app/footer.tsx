@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export function Footer() {
   return (
-    <footer className="row-start-3">
+    <footer>
       <p className="w-full text-balance text-center text-sm leading-loose text-muted-foreground">
         Le code source est disponible sur{" "}
         <Link

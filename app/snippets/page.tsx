@@ -23,16 +23,16 @@ export default async function Snippets() {
 
   if (data.length === 0) {
     return (
-      <div className="container prose prose-xl mx-auto px-4 dark:prose-invert">
-        <h1 className="my-4 text-center">Snippets</h1>
+      <MdxLayout>
+        <h1>Snippets</h1>
         <p>There are no snippets yet…</p>
-      </div>
+      </MdxLayout>
     );
   }
 
   return (
     <MdxLayout>
-      <ul className="container prose mx-auto px-4 dark:prose-invert">
+      <ul>
         {data.map(
           ({ slug, metadata: { title }, customMetadata: { publishedAt } }) => (
             <li key={slug} className="my-4">
