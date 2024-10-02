@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Providers from "@/app/providers";
 import { appTitle, appDescription, appLocale } from "@/lib/config";
+import { Footer } from "@/app/footer";
 import "./globals.css";
-import { Footer } from "./footer";
 
 export const metadata: Metadata = {
   title: appTitle,
@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang={appLocale} suppressHydrationWarning>
       <body className="min-h-screen flex flex-col justify-between font-sans antialiased">
         <Providers>
-          <main className="container w-full flex-1 flex flex-col gap-8 p-4">
+          <main className="container mx-auto w-full flex-1 flex flex-col gap-8 p-4">
             {children}
           </main>
           <Footer />
