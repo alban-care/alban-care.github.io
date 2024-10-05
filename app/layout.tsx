@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Providers from "@/app/providers";
 import { appTitle, appDescription, appLocale } from "@/lib/config";
 import { Footer } from "@/app/footer";
+import { FloatingMenu } from "@/components/floating-menu";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
             {children}
           </main>
           <Footer />
+          <FloatingMenu />
         </Providers>
       </body>
     </html>
