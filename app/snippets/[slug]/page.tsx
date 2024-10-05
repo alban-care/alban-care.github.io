@@ -1,6 +1,6 @@
 import dynamic from "next/dynamic";
 import MdxLayout from "@/app/mdx-layout";
-import { getAllFilesData, getFileMetadata } from "@/lib/utils";
+import { getAllFilesData, getFileMetadata } from "@/actions/data";
 import type { Metadata } from "next/types";
 
 interface SnippetPageParams {
@@ -20,6 +20,11 @@ export async function generateMetadata({
   params,
 }: SnippetPageParams): Promise<Metadata> {
   const { metadata } = await getFileMetadata("snippets", params.slug);
+
+  if (!metadata) {
+    throw new Error(`Missing metadata for snippet: ${params.slug}`);
+  }
+
   return {
     title: metadata.title,
     description: metadata.description,
@@ -27,8 +32,6 @@ export async function generateMetadata({
 }
 
 export default async function Snippet({ params }: SnippetPageParams) {
-  const { metadata } = await getFileMetadata("snippets", params.slug);
-  
   const MdxComponent = dynamic(
     () => import(`@/content/snippets/${params.slug}.mdx`)
   );
