@@ -15,7 +15,7 @@ export const appModeDefault = "system";
 
 export const appMenuLinks = [
   { href: "/", text: "Accueil" },
-  { href: "/blog", text: "Blog" },
+  { href: "/tips", text: "Tips" },
   { href: "/snippets", text: "Snippets" },
-  { href: "/about", text: "À propos" },
+  // { href: "/about", text: "À propos" },
 ];
