@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MdxLayout from "@/app/mdx-layout";
-import { getAllFilesData } from "@/lib/utils";
+import { getAllFilesData } from "@/actions/data";
 
 export async function generateMetadata() {
   const snippets = await getAllFilesData("snippets");
