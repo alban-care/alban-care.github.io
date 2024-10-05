@@ -10,3 +10,12 @@ export const appKeywords = [
 export const appAuthor = "Alban Caré";
 export const appLocale = "fr";
 export const appUrl = "https://albancare.github.io";
+
+export const appModeDefault = "system";
+
+export const appMenuLinks = [
+  { href: "/", text: "Accueil" },
+  { href: "/blog", text: "Blog" },
+  { href: "/snippets", text: "Snippets" },
+  { href: "/about", text: "À propos" },
+];

@@ -1,4 +1,5 @@
 import { ModeProvider } from "@/components/mode-provider";
+import { appModeDefault } from "@/lib/config";
 
 export default function Providers({
   children,
@@ -8,7 +9,7 @@ export default function Providers({
   return (
     <ModeProvider
       attribute="class"
-      defaultTheme="system"
+      defaultTheme={appModeDefault}
       enableSystem
       disableTransitionOnChange
     >
